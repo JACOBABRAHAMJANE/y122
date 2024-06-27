@@ -1,0 +1,518 @@
+Microsoft Windows [Version 10.0.22631.3737]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\HP>git
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--config-env=<name>=<envvar>] <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone     Clone a repository into a new directory
+   init      Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add       Add file contents to the index
+   mv        Move or rename a file, a directory, or a symlink
+   restore   Restore working tree files
+   rm        Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect    Use binary search to find the commit that introduced a bug
+   diff      Show changes between commits, commit and working tree, etc
+   grep      Print lines matching a pattern
+   log       Show commit logs
+   show      Show various types of objects
+   status    Show the working tree status
+
+grow, mark and tweak your common history
+   branch    List, create, or delete branches
+   commit    Record changes to the repository
+   merge     Join two or more development histories together
+   rebase    Reapply commits on top of another base tip
+   reset     Reset current HEAD to the specified state
+   switch    Switch branches
+   tag       Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch     Download objects and refs from another repository
+   pull      Fetch from and integrate with another repository or a local branch
+   push      Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+
+C:\Users\HP>git --version
+git version 2.45.2.windows.1
+
+C:\Users\HP>cd Desktop
+
+C:\Users\HP\Desktop>mkdir y22
+
+C:\Users\HP\Desktop>cd y22
+
+C:\Users\HP\Desktop\y22>git clone https://github.com/JACOBABRAHAMJANE/y122.git
+Cloning into 'y122'...
+remote: Enumerating objects: 10, done.
+remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 10 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (10/10), done.
+
+C:\Users\HP\Desktop\y22>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 04B7-3294
+
+ Directory of C:\Users\HP\Desktop\y22
+
+27-06-2024  12:18    <DIR>          .
+27-06-2024  12:17    <DIR>          ..
+27-06-2024  12:18    <DIR>          y122
+               0 File(s)              0 bytes
+               3 Dir(s)  78,800,326,656 bytes free
+
+C:\Users\HP\Desktop\y22>cd y122
+
+C:\Users\HP\Desktop\y22\y122>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 04B7-3294
+
+ Directory of C:\Users\HP\Desktop\y22\y122
+
+27-06-2024  12:18    <DIR>          .
+27-06-2024  12:18    <DIR>          ..
+27-06-2024  12:18                50 practice
+27-06-2024  12:18                35 README.md
+27-06-2024  12:18                56 y1
+               3 File(s)            141 bytes
+               2 Dir(s)  78,800,326,656 bytes free
+
+C:\Users\HP\Desktop\y22\y122>mkdir y2
+
+C:\Users\HP\Desktop\y22\y122>cd y2
+
+C:\Users\HP\Desktop\y22\y122\y2>cd..
+
+C:\Users\HP\Desktop\y22\y122>rm y2
+'rm' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\HP\Desktop\y22\y122>echo hllo.txt
+hllo.txt
+
+C:\Users\HP\Desktop\y22\y122>echo > hllo.txt
+
+C:\Users\HP\Desktop\y22\y122>rmdir y2
+
+C:\Users\HP\Desktop\y22\y122>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 04B7-3294
+
+ Directory of C:\Users\HP\Desktop\y22\y122
+
+27-06-2024  12:25    <DIR>          .
+27-06-2024  12:18    <DIR>          ..
+27-06-2024  12:25                13 hllo.txt
+27-06-2024  12:18                50 practice
+27-06-2024  12:18                35 README.md
+27-06-2024  12:18                56 y1
+               4 File(s)            154 bytes
+               2 Dir(s)  78,804,312,064 bytes free
+
+C:\Users\HP\Desktop\y22\y122>echo "html " > hllo.txt
+
+C:\Users\HP\Desktop\y22\y122>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 04B7-3294
+
+ Directory of C:\Users\HP\Desktop\y22\y122
+
+27-06-2024  12:25    <DIR>          .
+27-06-2024  12:18    <DIR>          ..
+27-06-2024  12:26                10 hllo.txt
+27-06-2024  12:18                50 practice
+27-06-2024  12:18                35 README.md
+27-06-2024  12:18                56 y1
+               4 File(s)            151 bytes
+               2 Dir(s)  78,804,197,376 bytes free
+
+C:\Users\HP\Desktop\y22\y122>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        hllo.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\HP\Desktop\y22\y122>
+C:\Users\HP\Desktop\y22\y122>git add hllo.txt
+
+C:\Users\HP\Desktop\y22\y122>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   hllo.txt
+
+
+C:\Users\HP\Desktop\y22\y122>git log
+commit 64999979b00ca8f8e2c0dabf3d843e20a4398e68 (HEAD -> main, origin/main, origin/HEAD)
+Merge: 07be0e2 1600717
+Author: JACOBABRAHAMJANE <pjajane02@gmail.com>
+Date:   Wed Jun 26 16:47:15 2024 +0530
+
+    Merge pull request #1 from JACOBABRAHAMJANE/feature
+
+    Create practice
+
+commit 16007173c6516d2ab7fdcfd8aa478a9cec3781f6 (origin/feature)
+Author: JACOBABRAHAMJANE <pjajane02@gmail.com>
+Date:   Wed Jun 26 16:41:03 2024 +0530
+
+    Create practice
+
+commit 07be0e212fb25a000796d35cff02566236d45127
+Author: JACOBABRAHAMJANE <pjajane02@gmail.com>
+Date:   Wed Jun 26 16:26:48 2024 +0530
+
+    Create  y1
+
+commit 57bd30de22ecc57aba4bee4f1f12461ba53d0cf2
+Author: JACOBABRAHAMJANE <pjajane02@gmail.com>
+Date:   Wed Jun 26 16:06:40 2024 +0530
+
+    Initial commit
+
+C:\Users\HP\Desktop\y22\y122>..
+'..' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\HP\Desktop\y22\y122>.
+'.' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\HP\Desktop\y22\y122>.
+'.' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\HP\Desktop\y22\y122>mkdir y3
+
+C:\Users\HP\Desktop\y22\y122>rmdir y3
+
+C:\Users\HP\Desktop\y22\y122>echo "hello i am git hub trainer" > gith.txt
+
+C:\Users\HP\Desktop\y22\y122>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 04B7-3294
+
+ Directory of C:\Users\HP\Desktop\y22\y122
+
+27-06-2024  12:44    <DIR>          .
+27-06-2024  12:18    <DIR>          ..
+27-06-2024  12:44                31 gith.txt
+27-06-2024  12:26                10 hllo.txt
+27-06-2024  12:18                50 practice
+27-06-2024  12:18                35 README.md
+27-06-2024  12:18                56 y1
+               5 File(s)            182 bytes
+               2 Dir(s)  78,779,740,160 bytes free
+
+C:\Users\HP\Desktop\y22\y122>git add gith.txt
+
+C:\Users\HP\Desktop\y22\y122>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 04B7-3294
+
+ Directory of C:\Users\HP\Desktop\y22\y122
+
+27-06-2024  12:44    <DIR>          .
+27-06-2024  12:18    <DIR>          ..
+27-06-2024  12:44                31 gith.txt
+27-06-2024  12:26                10 hllo.txt
+27-06-2024  12:18                50 practice
+27-06-2024  12:18                35 README.md
+27-06-2024  12:18                56 y1
+               5 File(s)            182 bytes
+               2 Dir(s)  78,779,609,088 bytes free
+
+C:\Users\HP\Desktop\y22\y122>get status
+'get' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\HP\Desktop\y22\y122>dit status
+'dit' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\HP\Desktop\y22\y122>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   gith.txt
+        new file:   hllo.txt
+
+
+C:\Users\HP\Desktop\y22\y122>git log
+commit 64999979b00ca8f8e2c0dabf3d843e20a4398e68 (HEAD -> main, origin/main, origin/HEAD)
+Merge: 07be0e2 1600717
+Author: JACOBABRAHAMJANE <pjajane02@gmail.com>
+Date:   Wed Jun 26 16:47:15 2024 +0530
+
+    Merge pull request #1 from JACOBABRAHAMJANE/feature
+
+    Create practice
+
+commit 16007173c6516d2ab7fdcfd8aa478a9cec3781f6 (origin/feature)
+Author: JACOBABRAHAMJANE <pjajane02@gmail.com>
+Date:   Wed Jun 26 16:41:03 2024 +0530
+
+    Create practice
+
+commit 07be0e212fb25a000796d35cff02566236d45127
+Author: JACOBABRAHAMJANE <pjajane02@gmail.com>
+Date:   Wed Jun 26 16:26:48 2024 +0530
+
+    Create  y1
+
+commit 57bd30de22ecc57aba4bee4f1f12461ba53d0cf2
+Author: JACOBABRAHAMJANE <pjajane02@gmail.com>
+Date:   Wed Jun 26 16:06:40 2024 +0530
+
+    Initial commit
+
+C:\Users\HP\Desktop\y22\y122>git commit "two files"
+error: pathspec 'two files' did not match any file(s) known to git
+
+C:\Users\HP\Desktop\y22\y122>git commit -m "two files"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'HP@DESKTOP-J84T120.(none)')
+
+C:\Users\HP\Desktop\y22\y122>git commit -m "first commit"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'HP@DESKTOP-J84T120.(none)')
+
+C:\Users\HP\Desktop\y22\y122>git commit -m
+error: switch `m' requires a value
+
+C:\Users\HP\Desktop\y22\y122> git config --global user.email "pjajane02@gmail.com"
+
+C:\Users\HP\Desktop\y22\y122>git config --global user.name "JACOBABRAHAMJANE"
+
+C:\Users\HP\Desktop\y22\y122>git commit -m "file"
+[main 686954c] file
+ 2 files changed, 2 insertions(+)
+ create mode 100644 gith.txt
+ create mode 100644 hllo.txt
+
+C:\Users\HP\Desktop\y22\y122>git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+C:\Users\HP\Desktop\y22\y122>git log
+commit 686954c343188309b86f7675b2ab402d4d4919ee (HEAD -> main)
+Author: JACOBABRAHAMJANE <pjajane02@gmail.com>
+Date:   Thu Jun 27 12:51:39 2024 +0530
+Date:   Thu Jun 27 12:51:39 2024 +0530
+
+    file
+
+commit 64999979b00ca8f8e2c0dabf3d843e20a4398e68 (origin/main, origin/HEAD)
+Merge: 07be0e2 1600717
+Author: JACOBABRAHAMJANE <pjajane02@gmail.com>
+Date:   Wed Jun 26 16:47:15 2024 +0530
+
+    Merge pull request #1 from JACOBABRAHAMJANE/feature
+
+    Create practice
+
+commit 16007173c6516d2ab7fdcfd8aa478a9cec3781f6 (origin/feature)
+Author: JACOBABRAHAMJANE <pjajane02@gmail.com>
+Date:   Wed Jun 26 16:41:03 2024 +0530
+
+    Create practice
+
+commit 07be0e212fb25a000796d35cff02566236d45127
+Author: JACOBABRAHAMJANE <pjajane02@gmail.com>
+Date:   Wed Jun 26 16:26:48 2024 +0530
+
+    Create  y1
+
+commit 57bd30de22ecc57aba4bee4f1f12461ba53d0cf2
+Author: JACOBABRAHAMJANE <pjajane02@gmail.com>
+Date:   Wed Jun 26 16:06:40 2024 +0530
+
+    Initial commit
+(END)
+
+    file
+
+commit 64999979b00ca8f8e2c0dabf3d843e20a4398e68 (origin/main, origin/HEAD)
+Merge: 07be0e2 1600717
+Author: JACOBABRAHAMJANE <pjajane02@gmail.com>
+Date:   Wed Jun 26 16:47:15 2024 +0530
+
+    Merge pull request #1 from JACOBABRAHAMJANE/feature
+
+    Create practice
+
+commit 16007173c6516d2ab7fdcfd8aa478a9cec3781f6 (origin/feature)
+Author: JACOBABRAHAMJANE <pjajane02@gmail.com>
+Date:   Wed Jun 26 16:41:03 2024 +0530
+
+    Create practice
+
+commit 07be0e212fb25a000796d35cff02566236d45127
+Author: JACOBABRAHAMJANE <pjajane02@gmail.com>
+Date:   Wed Jun 26 16:26:48 2024 +0530
+
+    Create  y1
+
+commit 57bd30de22ecc57aba4bee4f1f12461ba53d0cf2
+Author: JACOBABRAHAMJANE <pjajane02@gmail.com>
+Date:   Wed Jun 26 16:06:40 2024 +0530
+
+    Initial commit
+
+    file
+
+commit 64999979b00ca8f8e2c0dabf3d843e20a4398e68 (origin/main, origin/HEAD)
+Merge: 07be0e2 1600717
+Author: JACOBABRAHAMJANE <pjajane02@gmail.com>
+Date:   Wed Jun 26 16:47:15 2024 +0530
+
+    Merge pull request #1 from JACOBABRAHAMJANE/feature
+
+    Create practice
+
+commit 16007173c6516d2ab7fdcfd8aa478a9cec3781f6 (origin/feature)
+Author: JACOBABRAHAMJANE <pjajane02@gmail.com>
+Date:   Wed Jun 26 16:41:03 2024 +0530
+
+    Create practice
+
+commit 07be0e212fb25a000796d35cff02566236d45127
+Author: JACOBABRAHAMJANE <pjajane02@gmail.com>
+Date:   Wed Jun 26 16:26:48 2024 +0530
+
+    Create  y1
+
+commit 57bd30de22ecc57aba4bee4f1f12461ba53d0cf2
+Author: JACOBABRAHAMJANE <pjajane02@gmail.com>
+Date:   Wed Jun 26 16:06:40 2024 +0530
+
+    Initial commit
+...skipping...
+
+                   SUMMARY OF LESS COMMANDS
+
+      Commands marked with * may be preceded by a number, N.
+      Notes in parentheses indicate the behavior if N is given.
+      A key preceded by a caret indicates the Ctrl key; thus ^K is ctrl-K.
+
+  h  H                 Display this help.
+  q  :q  Q  :Q  ZZ     Exit.
+ ---------------------------------------------------------------------------
+
+                           MOVING
+
+  e  ^E  j  ^N  CR  *  Forward  one line   (or N lines).
+  y  ^Y  k  ^K  ^P  *  Backward one line   (or N lines).
+  f  ^F  ^V  SPACE  *  Forward  one window (or N lines).
+  b  ^B  ESC-v      *  Backward one window (or N lines).
+  z                 *  Forward  one window (and set window to N).
+  w                 *  Backward one window (and set window to N).
+  ESC-SPACE         *  Forward  one window, but don't stop at end-of-file.
+  d  ^D             *  Forward  one half-window (and set half-window to N).
+  u  ^U             *  Backward one half-window (and set half-window to N).
+  ESC-)  RightArrow *  Right one half screen width (or N positions).
+  ESC-(  LeftArrow  *  Left  one half screen width (or N positions).
+  ESC-}  ^RightArrow   Right to last column displayed.
+  ESC-{  ^LeftArrow    Left  to first column.
+  F                    Forward forever; like "tail -f".
+  ESC-F                Like F but stop when search pattern is found.
+  r  ^R  ^L            Repaint screen.
+HELP -- Press RETURN for more, or q when done...skipping...
+
+    file
+
+commit 64999979b00ca8f8e2c0dabf3d843e20a4398e68 (origin/main, origin/HEAD)
+Merge: 07be0e2 1600717
+Author: JACOBABRAHAMJANE <pjajane02@gmail.com>
+Date:   Wed Jun 26 16:47:15 2024 +0530
+
+    Merge pull request #1 from JACOBABRAHAMJANE/feature
+
+    Create practice
+
+commit 16007173c6516d2ab7fdcfd8aa478a9cec3781f6 (origin/feature)
+Author: JACOBABRAHAMJANE <pjajane02@gmail.com>
+Date:   Wed Jun 26 16:41:03 2024 +0530
+
+    Create practice
+
+commit 07be0e212fb25a000796d35cff02566236d45127
+Author: JACOBABRAHAMJANE <pjajane02@gmail.com>
+Date:   Wed Jun 26 16:26:48 2024 +0530
+
+    Create  y1
+
+commit 57bd30de22ecc57aba4bee4f1f12461ba53d0cf2
+Author: JACOBABRAHAMJANE <pjajane02@gmail.com>
+Date:   Wed Jun 26 16:06:40 2024 +0530
+
+    Initial commit
+
+C:\Users\HP\Desktop\y22\y122>git push
+fatal: User cancelled dialog.
+Username for 'https://github.com': JACOBABRAHAMJANE
+Password for 'https://JACOBABRAHAMJANE@github.com':
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/JACOBABRAHAMJANE/y122.git/'
+
+C:\Users\HP\Desktop\y22\y122>git push
+info: please complete authentication in your browser...
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 416 bytes | 416.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/JACOBABRAHAMJANE/y122.git
+   6499997..686954c  main -> main
+
+C:\Users\HP\Desktop\y22\y122>
